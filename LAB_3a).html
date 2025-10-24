@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT RECORD  MANAGEMENT</title>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ENTER STUDENT DETAILS</h2>
+
+    <form id="studentrecord">
+        Student ID:<input type="text" id="stid"><br>
+        Student NAME:<input type="text" id="stname"><br>
+        Student Age:<input type="text" id="stage"><br>
+        <button>SUBMIT STUDENT RECORD</button>
+        <!--to display students record and display the error-->
+    </form>
+
+    <h2>STUDENT RECORD</h2>
+
+    <div id="error" class="error"></div>
+
+    <!--ul is used to display appended student list-->
+    <ul id="studentlist"></ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>
